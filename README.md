@@ -1,2 +1,2 @@
 # one-hour-of-code
-Code Snippet in different languages
+Code snippet in different programming languages .
