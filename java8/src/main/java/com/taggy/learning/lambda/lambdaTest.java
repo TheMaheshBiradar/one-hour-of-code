@@ -14,10 +14,16 @@ public class lambdaTest {
             }
         });
 
+        // clean , syntactical sugar
+        final Runnable lambdaAsVariable = () -> System.out.println("Lambda as Variable Thread2 started");
+        Thread thread2 = new Thread(lambdaAsVariable);
+
         // clean , syntactical sugar , concise code.
-        Thread thread2 = new Thread(() ->  System.out.println("Lambda Thread2 started"));
+
+        Thread thread3 = new Thread(() -> System.out.println("Lambda Thread3 started"));
 
         thread1.start();
         thread2.start();
+        thread3.start();
     }
 }
